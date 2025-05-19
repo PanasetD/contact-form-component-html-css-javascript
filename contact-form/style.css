@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/*============= VARIABLE CSS =============*/
+:root{
+    /*=========== FONT COLOR ===========*/
+    --primary-color: hsl(148, 38%, 91%);
+    --secondary-color: hsl(169, 82%, 27%);
+    --btn-hover-color: hsl(169, 89%, 18%);
+
+    /*=========== DISPLAY EFFECT STYLE ===========*/
+    --effect-white-color: hsl(0, 0%, 100%);
+    --effect-gray500-color: hsl(186, 15%, 59%);
+    --effect-gray900-color: hsl(187, 24%, 22%); 
+
+    /*=========== TYPOGRAPHY ===========*/
+    --font-size: 16px;
+
+    /*=========== FONT WEIGHT ===========*/
+    --font-semi-bold: 400;
+    --font-bold: 700;
+}
+
+.form__container{
+    margin: 2rem;
+    padding: 1.25rem;
+    width: 400px;
+    height: 550px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+}
+
+.form__name{
+    font-size: 24px;
+    font-weight: var(--font-bold);
+    padding-bottom: 0.75rem;
+}
+
+.name__lastname{
+   display: flex;
+   flex-direction: row;
+   gap: 0.5rem;
+   padding: 1rem 0;
+}
+
+.name h6,
+.lastname h6{
+    color: var(--effect-gray500-color);
+    padding-bottom: 0.25rem;
+}
+
+.name h6 span,
+.lastname h6 span{
+    color: var(--secondary-color);
+    padding-left: 0.25rem;
+}
+
+.first__name,
+.last__name{
+   outline: none; 
+   border: 1px solid var(--secondary-color);
+   padding: 0.35rem;
+   border-radius: 4px;
+   color: var(--effect-gray900-color);
+   cursor: pointer;
+   width: 11.5rem;
+}
+
+
+.address{
+    color: var(--effect-gray500-color);
+    padding-bottom: 0.5rem;
+}
+.address span{
+    color: var(--secondary-color);
+    padding-left: 0.25rem;
+}
+.email{
+    outline: none; 
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    width: 25rem;
+    height: 1.75rem;
+}
+
+.query__type{
+    padding-top: 1rem;
+}
+.radio__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.radio__list{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 25rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.25rem;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-color);
+}
+.query{
+    padding-bottom: 0.5rem;
+}
+.query{
+    color: var(--effect-gray500-color);
+}
+.query span{
+    color: var(--secondary-color);
+    padding-left: 0.25rem;  
+} 
+.query__type-sq{
+    border: 1px solid var(--secondary-color); 
+}
+.general,
+.support{
+    color: var(--effect-gray500-color);
+    font-size: 12px
+}
+#general,
+#support{
+    width: 12px;
+    cursor: pointer;
+}
+
+.message__detail{
+    padding-top: 1rem;
+}
+.message__title{
+    color: var(--effect-gray500-color);
+    padding-bottom: 0.5rem;
+}
+.message span{
+    color: var(--secondary-color);
+    padding-left: 0.25rem;  
+}
+.message__textarea{
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.submit h6{
+    font-size: 0.5;
+    font-weight: 250;
+    color: var(--effect-gray500-color);
+}
+.submit span{
+    color: var(--secondary-color);
+    padding-left: 0.25rem;  
+}
+#confirm{
+    width: 0.75rem;
+    cursor: pointer;
+}
+
+.btn__submit{
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    color: white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+.btn__submit:hover{
+    background-color: var(--btn-hover-color);
+}
+
+    /*========== CASE ERROR USER NOT INPUT DATA  */
+    .error{
+        color: red;
+        font-size: 0.5rem;
+        margin-bottom: 10px;
+    }
+    .border-error{
+        border: 1px solid red;
+    }
+
+@media screen and (max-width:376px) {
+    .form__container{
+        margin-left: 5rem;
+        padding: 1.25rem;
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid var(--secondary-color);
+    }
+    .name__lastname{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+    .first__name,
+    .last__name{
+        outline: none; 
+        border: 1px solid var(--secondary-color);
+        padding: 0.35rem;
+        border-radius: 4px;
+        color: var(--effect-gray900-color);
+        cursor: pointer;
+        width: 17.5rem;
+    }
+
+    .email{
+        outline: none; 
+        border: 1px solid var(--secondary-color);
+        border-radius: 4px;
+        width: 18.5rem;
+        height: 1.75rem;
+    }
+
+    .radio__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .radio__list{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 17.5rem;
+        height: 1.5rem;
+        padding: 0.25rem 0.25rem;
+        border-radius: 4px;
+        border: 1px solid var(--secondary-color);
+    }
+
+    .message__textarea{
+        outline: none;
+        width: 18.5rem;
+        border: 1px solid var(--secondary-color);
+        border-radius: 4px;
+    }
+    .attribution{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3rem;
+    }
+
+    .attribution p{
+        font-size: 0.75rem;
+    }
+
+}

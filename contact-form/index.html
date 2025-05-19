@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: 0;
+      font-family: "Karla", sans-serif;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      max-width: 1024px;
+      height: auto;
+    }
+   </style>
+</head>
+<body>
+
+  <div class="container">
+    <form action="" class="form__container" id="contactForm" novalidate>
+      <h2 class="form__name">Contact Us</h2>
+
+      <div class="name__lastname">
+        <div class="name">
+          <h6>First Name<span>*</span></h6>
+          <input type="text" placeholder="Firstname" class="first__name" id="first-name">
+          <div class="error" id="firstNameError"></div>
+        </div>
+
+        <div class="lastname">
+          <h6>Last Name<span>*</span></h6>
+          <input type="text"placeholder="Lastname" class="last__name" id="last-name">
+          <div class="error" id="lastNameError"></div>
+        </div>
+      </div>
+
+        <h6 class="address">Email Address<span>*</span></h6>
+        <input type="email" name="email" placeholder="Email Address" class="email" id="email">
+        <div class="error" id="emailError"></div>
+
+        <div class="query__type">
+          <h6 class="query">Query Type<span>*</span></h6>
+
+          <div class="radio__link">
+
+            <div class="radio__list">
+              <input type="radio" name="query__type-sq" id="general" value="general">
+              <label for="general" class="general">General Enquiry</label>
+            </div>
+
+            <div class="radio__list">
+              <input type="radio" name="query__type-sq" id="support" value="support">
+              <label for="support" class="support">Support Request</label>
+            </div>
+          </div>
+          <div class="error" id="queryTypeChecked"></div>
+        </div>
+
+        <div class="message__detail">
+          <h6 class="message__title">Message<span>*</span></h6>
+          <textarea name="message" class="message__textarea" id="message" cols="55" rows="5" placeholder="Message"></textarea>
+          <div class="error" id="messageError"></div>
+        </div>
+
+        <div class="submit">
+          <input type="checkbox" name="confirm" id="confirm">
+          <h6>I consent to being constacted by th team<span>*</span></h6>
+        </div>
+        <div class="error" id="confirmError"></div>
+
+        <button type="submit" class="btn__submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Contact Us
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+  
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">PropMan Property</a>.
+  </p>
+  </div>
+</body>
+  <script src="script.js"></script>
+  <!-- <script src="script2.js"></script> -->
+</html>
